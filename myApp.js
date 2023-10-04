@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
-const helmet = require("helmet");
+var helmet = require("helmet");
+
+app.use(helmet.hidePoweredBy());
 
 module.exports = app;
 const api = require("./server.js");
